@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian Gods</title>
+    <style>
+       
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #140505;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transition: font 0.3s ease;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       @media (max-width: 600px) {
+            body {
+                font-family: 'Times New Roman', serif;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body {
+                font-family: 'Courier New', monospace;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Egyptian Gods</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to our informative webpage about Egyptian gods.</p>
+        <h2>Egyptian Gods and Their Symbols</h2>
+
+<p>Egyptian mythology is rich with a pantheon of gods and goddesses, each associated with specific symbols that hold deep significance in their stories and the culture of ancient Egypt. Here are some of the most prominent Egyptian gods and their symbols:</p>
+
+<h3>Ra - The Sun God</h3>
+<img src="images/god RA.jpg" alt="Ra">
+<p>Ra is the god of the sun and the creator of all life. He is often depicted with a sun disk on his head, symbolizing the sun's power and warmth. The sacred animal associated with Ra is the falcon.</p>
+
+<h3>Isis - The Goddess of Magic</h3>
+<img src="images/god of isis.jpg" alt="Isis">
+<p>Isis is a powerful goddess known for her magical abilities. She is often portrayed with a throne-shaped headdress, symbolizing her role as a queen. The ankh, a cross with a loop at the top, is a common symbol associated with her and represents life and immortality.</p>
+
+<h3>Anubis - The God of the Afterlife</h3>
+<img src="images/anubis.jpeg" alt="Anubis">
+<p>Anubis is the god who guides souls to the afterlife and oversees the process of mummification. His head is that of a jackal or a wild dog, emphasizing his role as a protector of the deceased. Anubis is also often shown holding an ankh, a symbol of life.</p>
+
+<h3>Horus - The God of Kingship</h3>
+<img src="images/god of horus.jpeg" alt="Horus">
+<p>Horus is the god of kingship and the sky. He is often depicted with the head of a falcon, wearing the crown of Upper and Lower Egypt. The eye of Horus, an ancient Egyptian symbol, represents protection, healing, and royal power.</p>
+
+<p>These are just a few of the many Egyptian gods and goddesses, each with their unique symbols and stories. Explore the rich world of Egyptian mythology to discover more about their significance in ancient Egyptian culture.</p>
+
+
+    </div>
+
+    <script>
+         window.onresize = function() {
+            applyFontBasedOnWindowSize();
+            document.body.style.backgroundColor=getRandomColor();
+        };
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function applyFontBasedOnWindowSize() {
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth <= 600) {
+                document.body.style.fontFamily = 'Times New Roman, serif';
+            } else if (screenWidth <= 1024) {
+                document.body.style.fontFamily = 'Courier New, monospace';
+            } else {
+                
+                document.body.style.fontFamily = 'Arial, sans-serif';
+            }
+        }
+
+        
+        applyFontBasedOnWindowSize();
+        getRandomColor();
+
+        
+        
+    </script>
+</body>
+</html>
